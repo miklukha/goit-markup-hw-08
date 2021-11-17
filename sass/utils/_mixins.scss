@@ -1,0 +1,12 @@
+@mixin grid-list($mt: -30px, $ml: -30px) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $mt;
+  margin-left: $ml;
+}
+
+@mixin grid-item($mt: 30px, $ml: 30px, $num: 2) {
+  margin-top: $mt;
+  margin-left: $ml;
+  flex-basis: calc((100% - $num * $mt) / $num);
+}

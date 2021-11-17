@@ -1,0 +1,79 @@
+.clients__list {
+  @media screen and (min-width: 480px) {
+    @include grid-list();
+  }
+  @media screen and (min-width: 768px) {
+    @include grid-list();
+  }
+  @media screen and (min-width: 1200px) {
+    @include grid-list();
+  }
+}
+
+.clients__item {
+  height: 92px;
+  width: 210px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    @include grid-item();
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    @include grid-item($num: 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    @include grid-item($num: 6);
+  }
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+}
+
+// @media screen and (min-width: 480px) {
+// 	width: 450px;
+// }
+// @media screen and (min-width: 768px) {
+// 	width: 354px;
+// 	@include grid-item();
+// }
+// @media screen and (min-width: 1200px) {
+// 	width: 270px;
+// 	@include grid-item($num: 4);
+// }
+// &:not(:last-child) {
+// 	@media screen and (max-width: 767px) {
+// 		margin-bottom: 30px;
+// 	}
+// }
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid var(--first-icon-color);
+  border-radius: 4px;
+  color: var(--first-icon-color);
+  transition: color var(--transit-dur) var(--transit-func),
+    border-color var(--transit-dur) var(--transit-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

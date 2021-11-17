@@ -1,0 +1,18 @@
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  transition: color var(--transit-dur) var(--transit-func),
+    background-color var(--transit-dur) var(--transit-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--second-icon-color);
+  }
+}
