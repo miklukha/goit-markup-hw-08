@@ -1,0 +1,136 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--second-bg-color);
+  // @media screen and (min-width: 768px) {
+  //   padding-left: 76px;
+  //   padding-right: 89px;
+  // }
+}
+
+// .footer__container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .footer__form {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.footer__left-side {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.footer__right-side {
+  text-align: center;
+}
+
+// .footer__wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .footer__content {
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
+
+// .footer__container {
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: baseline;
+//   }
+// }
+
+.footer__content {
+  margin-bottom: 60px;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  // }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__location {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.address__contacts {
+  @extend .address__location;
+  color: var(--contacts-color);
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  color: var(--second-text-color);
+}
+
+.footer__social-list {
+  justify-content: center;
+}
+
+.footer__social-link {
+  color: var(--second-icon-color);
+  background-color: var(--icon-bg-color);
+}
+
+.footer__icon {
+  fill: currentColor;
+}
+
+.footer__form {
+  text-align: center;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__email {
+  width: 450px;
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+
+  border: 1px solid var(--input-footer-border-color);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  background-color: transparent;
+  color: var(--second-text-color);
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.footer__icon {
+  fill: currentColor;
+}
+
+.footer__form-icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
