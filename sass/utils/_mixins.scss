@@ -10,3 +10,11 @@
   margin-left: $ml;
   flex-basis: calc((100% - $num * $mt) / $num);
 }
+
+@mixin bg-linear($url) {
+  background-image: linear-gradient(
+      var(--hero-overlay-color),
+      var(--hero-overlay-color)
+    ),
+    url($url);
+}
