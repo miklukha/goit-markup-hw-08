@@ -5,10 +5,10 @@
 }
 
 .filter-list {
-  display: flex;
   margin-bottom: 40px;
+
+  display: flex;
   flex-wrap: wrap;
-  // align-content: space-between;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
@@ -20,20 +20,26 @@
   }
 }
 
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
+.filter-list__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 787px) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__btn {
   display: block;
+
   padding: 6px 22px;
   border: transparent;
   border-radius: 4px;
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
+  line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   color: var(--third-text-color);
   background-color: var(--filter-button-bg-color);

@@ -1,0 +1,22 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--backdrop-color);
+
+  transition: opacity var(--transit-dur) var(--transit-func),
+    visibility var(--transit-dur) var(--transit-func);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

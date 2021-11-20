@@ -1,0 +1,144 @@
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__text {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--third-text-color);
+  @media screen and(min-width: 1200px) {
+    line-height: calc(23 / 20);
+  }
+}
+
+.modal__field {
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--first-text-color);
+}
+
+.modal__wrapper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+  color: var(--third-text-color);
+}
+
+.modal__input--common {
+  width: 100%;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  transition: border-color var(--transit-dur) var(--transit-func);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.modal__input {
+  height: 40px;
+  padding-left: 42px;
+}
+
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+
+  .modal__input:focus + & {
+    color: var(--accent-color);
+  }
+}
+
+.modal__message {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-bottom: 20px;
+  margin-top: 4px;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+
+    color: var(--placeholder-color);
+  }
+}
+
+.modal__checkbox {
+  transition: border-color var(--transit-dur) var(--transit-func);
+}
+
+.modal__checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 7px;
+
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid var(--third-text-color);
+    background-color: var(--first-bg-color);
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    .modal__checkbox:checked + & {
+      border-color: transparent;
+      background: {
+        image: url(../img/icon-check.svg);
+        color: var(--accent-color);
+        size: contain;
+        repeat: no-repeat;
+        origin: border-box;
+        position: center;
+      }
+    }
+
+    .modal__checkbox:focus + & {
+      border-color: var(--accent-color);
+    }
+  }
+}
+
+.modal__policy {
+  color: var(--accent-color);
+}
+
+.modal__btn {
+  align-self: center;
+}

@@ -1,0 +1,23 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  padding: 40px;
+
+  width: 450px;
+  height: 609px;
+  background-color: var(--first-bg-color);
+
+  transition: transform var(--transit-dur) var(--transit-func);
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
