@@ -8,7 +8,7 @@
 @mixin grid-item($mt: 30px, $ml: 30px, $num: 2) {
   margin-top: $mt;
   margin-left: $ml;
-  flex-basis: calc((100% - #{$num} * 30) / #{$num});
+  flex-basis: calc((100% - #{$num} * #{$mt}) / #{$num});
 }
 
 @mixin bg-linear($url) {
