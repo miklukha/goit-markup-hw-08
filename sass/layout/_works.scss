@@ -75,7 +75,6 @@
 
 .works__item {
   width: 100%;
-  min-height: 404px;
   @media screen and (min-width: 480px) {
     width: 450px;
   }
@@ -84,8 +83,8 @@
     @include grid-item();
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    &:nth-child(1) .works__desc {
-      padding-bottom: 56px;
+    &:nth-child(2) .works__desc {
+      padding-right: 0;
     }
   }
 
