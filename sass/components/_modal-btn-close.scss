@@ -1,26 +1,28 @@
 .modal__btn--close {
-	position: absolute;
-	top: 8px;
-	right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 30px;
-	height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
 
-	border: 1px solid var(--btn-border-color);
-	border-radius: 50%;
-	color: var(--additional-color);
+  border: 1px solid var(--btn-border-color);
+  border-radius: 50%;
+  color: var(--additional-color);
 
-	transition: color var(--transit-dur) var(--transit-func);
+  transition: color var(--transit-dur) var(--transit-func);
 
-	&:hover,
-	&:focus {
-		color: var(--accent-color);
-	}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .modal__icon--close {
-	fill: currentColor;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
