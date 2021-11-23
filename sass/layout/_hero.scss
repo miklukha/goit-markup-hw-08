@@ -54,7 +54,7 @@
 }
 
 .hero__wrapper {
-  width: 100%;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
 
@@ -71,11 +71,16 @@
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 26px;
-  line-height: calc(42 / 26);
+  font-size: 22px;
+  line-height: calc(42 / 22);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-title-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
